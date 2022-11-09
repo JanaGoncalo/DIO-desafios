@@ -37,9 +37,13 @@ public class Main {
                
 
         int anos = 0;
-
-        //TODO: retornar o número de anos necessários para que a população do país A ultrapasse ou iguale a população B
         
+        while (A < B){
+          A += (A * 3 / 100);
+          B += (B * 1.5 / 100);
+          anos++;
+        }
+
         System.out.println(anos + " anos");
     }
 }
